@@ -5,6 +5,7 @@ import Card from './Card.jsx'
 
 const Service = () => 
   <>
+  
   <div className="my-5">
       <h1 className="text-center">Our Services</h1>
   </div>
