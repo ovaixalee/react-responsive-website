@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { HashLink as NavLink } from 'react-router-hash-link';
+
 
 const Navbar = () => 
     <>
@@ -37,10 +38,11 @@ const Navbar = () =>
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink 
+                                <NavLink
                                     activeClassName="menu_active" 
                                     className="nav-link" 
-                                    to="/about">
+                                    to="/aboutus#aboutus"
+                                    >
                                     Über Uns
                                 </NavLink>
                             </li>
@@ -48,7 +50,7 @@ const Navbar = () =>
                                 <NavLink 
                                     activeClassName="menu_active" 
                                     className="nav-link" 
-                                    to="/service">
+                                    to="/services#services">
                                     Services
                                 </NavLink>
                             </li>
@@ -56,7 +58,7 @@ const Navbar = () =>
                                 <NavLink 
                                     activeClassName="menu_active" 
                                     className="nav-link" 
-                                    to="/contact">
+                                    to="/contactus#contactus">
                                     Kontakt
                                 </NavLink>
                             </li>
