@@ -51,7 +51,7 @@ const Navbar = () =>
                                     activeClassName="menu_active" 
                                     className="nav-link" 
                                     to="/services#services">
-                                    Services
+                                    Unsere Services
                                 </NavLink>
                             </li>
                             <li className="nav-item">
