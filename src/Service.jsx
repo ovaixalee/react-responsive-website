@@ -4,9 +4,10 @@ import Card from './Card.jsx'
 
 
 const Service = () => 
-  <>
-  <div className="my-5">
-      <h1 className="text-center">Our Services</h1>
+  < >
+  
+  <div id="services" className="my-5">
+      <h1 className="text-center">Unsere Services</h1>
   </div>
     <div className="container-fluid">
       <div className="row">

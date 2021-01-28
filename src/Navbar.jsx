@@ -1,12 +1,14 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { HashLink as NavLink } from 'react-router-hash-link'
+import Navbar from 'react-bootstrap/Navbar'
 
-const Navbar = () => 
+
+const Navigationbar = () => 
     <>
         <div className="container-fluid nav_bg">
             <div className="row">
                 <div className="col-11 mx-auto">
-                <nav className="navbar navbar-expand-lg navbar-light">
+                <Navbar className="navbar navbar-expand-lg navbar-light " fixed="top" >
                     <NavLink
                         className="navbar-brand" 
                         to="#">
@@ -31,16 +33,17 @@ const Navbar = () =>
                                     exact
                                     activeClassName="menu_active" 
                                     className="nav-link" 
-                                    to="/">
+                                    to="/header#header">
                                     Home 
                                     <span class="sr-only">(current)</span>
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink 
+                                <NavLink
                                     activeClassName="menu_active" 
                                     className="nav-link" 
-                                    to="/about">
+                                    to="/aboutus#aboutus"
+                                    >
                                     Über Uns
                                 </NavLink>
                             </li>
@@ -48,7 +51,7 @@ const Navbar = () =>
                                 <NavLink 
                                     activeClassName="menu_active" 
                                     className="nav-link" 
-                                    to="/service">
+                                    to="/services#services">
                                     Services
                                 </NavLink>
                             </li>
@@ -56,17 +59,17 @@ const Navbar = () =>
                                 <NavLink 
                                     activeClassName="menu_active" 
                                     className="nav-link" 
-                                    to="/contact">
+                                    to="/contactus#contactus">
                                     Kontakt
                                 </NavLink>
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </Navbar>
                 </div>
             </div>
         </div>
     </>
 
 
-export default Navbar
+export default Navigationbar
